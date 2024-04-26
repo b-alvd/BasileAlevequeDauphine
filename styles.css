@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: pink;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 97.8%;
+    padding: 20px;
+    background-color: #333;
+}
+nav h1 {
+    color: white;
+}
+nav a {
+    margin: 10px 20px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: pink;
+}
+
+
+/* login */
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25vh 50px;
+}
+.login_form input {
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    border: 1px solid pink;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login_form .form-btn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login_form .form-btn:hover {
+    background-color: #33333379;
+}
+.text_error {
+    color: red;
+}
+
+
+/* admin page */
+.add_container_form {
+    margin: 10px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+.add_container_form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: underline 2px pink;
+}
+.add_container_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add_container_form form label {
+    color: white;
+}
+.add_container_form form input,
+.add_container_form form textarea {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    border: 1px solid pink;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.add_container_form form .form-btn {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 165, 180);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.add_container_form form .form-btn:hover {
+    background-color: rgba(255, 165, 180, 0.5);
+}
+.admin_articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 50px;
+    background-color: #333;
+    border-radius: 5px;
+}
+.no_articles {
+    grid-column: 2;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.admin_articles article {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background-color: #494949;
+    border-radius: 5px;
+}
+.admin_articles article .id {
+    text-align: center;
+    text-decoration: underline 2px pink;
+    margin-bottom: 10px;
+}
+.admin_articles article .title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.admin_articles article .infos {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.admin_articles article .buttons {
+    text-align: center;
+}
+.admin_articles article .buttons a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 165, 180);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.admin_articles article .buttons a:hover {
+    background-color: rgba(255, 165, 180, 0.5);
+}
+.other_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+.other_buttons a, .other_buttons form input {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(255, 165, 180);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.other_buttons a:hover, .other_buttons form input:hover {
+    background-color: rgba(255, 165, 180, 0.5);
+}
+
+
+/* update article page */
+.update_article_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh 50px;
+}
+.update_article_form input,
+.update_article_form textarea {
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    border: 1px solid pink;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.update_article_form .form-btn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.update_article_form .form-btn:hover {
+    background-color: #33333379;
+}
+
+
+/* articles page home */
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.articles .article_item {
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    flex-basis: 45%;
+}
+.articles .article_item img {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+    padding: 20px 0 20px 20px;
+}
+.articles .article_item .article_item_content {
+    display: flex;
+    flex-direction: column;
+}
+.articles .article_item .article_item_content h2 {
+    margin-bottom: 15px;
+}
+.articles .article_item .article_item_content .article_contenu_container {
+    margin-bottom: 3vh;
+    width: 20vw;
+    height: 20vh;
+    overflow: auto;
+}
+.articles .article_item .article_item_content p {
+    margin-bottom: 30px;
+}
+.articles .article_item .article_item_infos {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    left: 13vw;
+    bottom: 1vh;
+}
+.articles .article_item .article_item_infos p {
+    margin: 0 10px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #333;
+}
